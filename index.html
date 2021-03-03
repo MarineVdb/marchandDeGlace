@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marchand de glaces</title>
+</head>
+<body>
+    <h1>Bienvenue chez le Marchand de glace</h1>
+    <h3>Faites votre commande !</h3>
+    <form>
+           <div>
+                <input type ="checkbox" value = "chocolat" id= "chocolat" name="chocolat"  onchange="ajouter(this)">
+                <label for="chocolat"> Chocolat </label>
+           </div>
+
+           <div>
+               <input type ="checkbox" value = "vanille" id="vanille" name="vanille" onchange="ajouter(this)">
+               <label for="vanille"> Vanille </label>
+           </div>
+
+           <div>
+               <input type ="checkbox" value="fraise" id="fraise" name="fraise" onchange="ajouter(this)">
+               <label for="fraise"> Fraise </label>
+           </div>
+
+           <div>
+               <br>
+               <input type="button" value="Commander" onclick="commander()">
+           </div>
+
+           <div id="nbParfum">
+
+           </div>
+
+           <div id="resultat">
+               
+           </div>
+  
+        </form>
+
+<script type="text/javascript" language="JavaScript" src="script.js"></script>
+</body>
+</html>
